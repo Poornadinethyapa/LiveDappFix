@@ -1,0 +1,1066 @@
+# 🎮 Catch Items Web3 Game - Complete Project
+
+## 📁 Project Structure
+```
+catch-items-web3/
+├── package.json
+├── vite.config.js
+├── tailwind.config.js
+├── postcss.config.js
+├── .gitignore
+├── README.md
+├── public/
+│   └── index.html
+└── src/
+    ├── main.jsx
+    ├── App.jsx
+    └── index.css
+```
+
+---
+
+## 📄 File Contents
+
+### 1️⃣ **package.json**
+```json
+{
+  "name": "catch-items-web3",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A fun Web3 catching game on Base Network",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "lucide-react": "^0.263.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.6",
+    "vite": "^5.0.8"
+  }
+}
+```
+
+---
+
+### 2️⃣ **vite.config.js**
+```javascript
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  server: {
+    port: 3000,
+    open: true
+  }
+})
+```
+
+---
+
+### 3️⃣ **tailwind.config.js**
+```javascript
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+
+---
+
+### 4️⃣ **postcss.config.js**
+```javascript
+export default {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+}
+```
+
+---
+
+### 5️⃣ **.gitignore**
+```
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment variables
+.env
+.env.local
+.env.production
+```
+
+---
+
+### 6️⃣ **README.md**
+```markdown
+# 🎮 Catch Items - Web3 Game
+
+A fun and addictive catching game built on Base Network with MetaMask and OKX wallet integration!
+
+![Game Screenshot](https://via.placeholder.com/800x400?text=Catch+Items+Game)
+
+## ✨ Features
+
+- 🦊 **Wallet Integration**: MetaMask & OKX Wallet support
+- ⛓️ **Base Network**: Built on Base blockchain
+- 🏆 **Global Leaderboard**: Compete with players worldwide
+- 👤 **Guest Mode**: Play without connecting a wallet
+- 🌓 **Dark/Light Mode**: Beautiful themes for day and night
+- 📱 **Mobile Responsive**: Play on any device
+- 🎯 **Addictive Gameplay**: Simple but challenging
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Node.js 16+ installed
+- MetaMask or OKX Wallet browser extension (for Web3 features)
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/catch-items-web3.git
+cd catch-items-web3
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start development server:
+```bash
+npm run dev
+```
+
+4. Open your browser and visit: `http://localhost:3000`
+
+## 🎮 How to Play
+
+### Controls
+- **Desktop**: Use ← → arrow keys to move the basket
+- **Mobile**: Touch and drag the basket left/right
+
+### Rules
+- Catch falling items to score points (+10 per item)
+- Miss 10 items and it's game over
+- Connect your wallet to save scores to the leaderboard
+- Compete for the top spot!
+
+## 🏗️ Build for Production
+
+```bash
+npm run build
+```
+
+The built files will be in the `dist/` folder.
+
+## 📦 Tech Stack
+
+- **Frontend**: React 18
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **Build Tool**: Vite
+- **Blockchain**: Base Network
+- **Wallets**: MetaMask, OKX Wallet
+
+## 🔧 Configuration
+
+### Base Network Details
+- Chain ID: 8453 (0x2105)
+- RPC URL: https://mainnet.base.org
+- Block Explorer: https://basescan.org
+
+## 📝 Project Structure
+
+```
+catch-items-web3/
+├── public/
+│   └── index.html          # HTML template
+├── src/
+│   ├── App.jsx             # Main game component
+│   ├── main.jsx            # React entry point
+│   └── index.css           # Global styles
+├── package.json            # Dependencies
+├── vite.config.js          # Vite configuration
+├── tailwind.config.js      # Tailwind configuration
+└── README.md               # Documentation
+```
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## 🙏 Acknowledgments
+
+- Built with React and Vite
+- Icons by Lucide
+- Styled with Tailwind CSS
+- Deployed on Base Network
+
+## 📧 Contact
+
+Your Name - [@yourtwitter](https://twitter.com/yourtwitter)
+
+Project Link: [https://github.com/yourusername/catch-items-web3](https://github.com/yourusername/catch-items-web3)
+
+---
+
+⭐ Star this repo if you like it!
+```
+
+---
+
+### 7️⃣ **public/index.html**
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Catch Items - A fun Web3 game on Base Network" />
+    <meta name="keywords" content="web3, game, base network, metamask, blockchain" />
+    <title>Catch Items - Web3 Game</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+```
+
+---
+
+### 8️⃣ **src/main.jsx**
+```jsx
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
+import './index.css'
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+)
+```
+
+---
+
+### 9️⃣ **src/index.css**
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(139, 92, 246, 0.5);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 92, 246, 0.8);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Prevent text selection during game */
+.touch-none {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: none;
+}
+```
+
+---
+
+### 🔟 **src/App.jsx**
+```jsx
+import React, { useState, useEffect, useRef } from 'react';
+import { Trophy, Wallet, X, ChevronDown, Moon, Sun, Play, RotateCcw } from 'lucide-react';
+
+const BASE_CHAIN_ID = '0x2105';
+const BASE_CHAIN_CONFIG = {
+  chainId: BASE_CHAIN_ID,
+  chainName: 'Base',
+  nativeCurrency: { name: 'Ethereum', symbol: 'ETH', decimals: 18 },
+  rpcUrls: ['https://mainnet.base.org'],
+  blockExplorerUrls: ['https://basescan.org']
+};
+
+export default function CatchingGame() {
+  const [darkMode, setDarkMode] = useState(true);
+  const [account, setAccount] = useState('');
+  const [isGuest, setIsGuest] = useState(false);
+  const [score, setScore] = useState(0);
+  const [missedItems, setMissedItems] = useState(0);
+  const [gameActive, setGameActive] = useState(false);
+  const [basketPos, setBasketPos] = useState(50);
+  const [items, setItems] = useState([]);
+  const [showLeaderboard, setShowLeaderboard] = useState(false);
+  const [showWalletMenu, setShowWalletMenu] = useState(false);
+  const [leaderboard, setLeaderboard] = useState([]);
+  const [gameOver, setGameOver] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const gameInterval = useRef(null);
+  const itemInterval = useRef(null);
+
+  useEffect(() => {
+    loadLeaderboard();
+  }, []);
+
+  const loadLeaderboard = async () => {
+    setLoading(true);
+    try {
+      const keys = await window.storage.list('score:', true);
+      if (keys && keys.keys) {
+        const scores = await Promise.all(
+          keys.keys.map(async (key) => {
+            try {
+              const result = await window.storage.get(key, true);
+              return result ? JSON.parse(result.value) : null;
+            } catch {
+              return null;
+            }
+          })
+        );
+        const validScores = scores.filter(s => s).sort((a, b) => b.score - a.score).slice(0, 10);
+        setLeaderboard(validScores);
+      }
+    } catch (error) {
+      console.log('Loading leaderboard...');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const connectWallet = async (walletType) => {
+    try {
+      let provider;
+      if (walletType === 'metamask') {
+        if (!window.ethereum) {
+          alert('Please install MetaMask!');
+          return;
+        }
+        provider = window.ethereum;
+      } else if (walletType === 'okx') {
+        if (!window.okxwallet) {
+          alert('Please install OKX Wallet!');
+          return;
+        }
+        provider = window.okxwallet;
+      }
+
+      const accounts = await provider.request({ method: 'eth_requestAccounts' });
+      const chainId = await provider.request({ method: 'eth_chainId' });
+
+      if (chainId !== BASE_CHAIN_ID) {
+        try {
+          await provider.request({
+            method: 'wallet_switchEthereumChain',
+            params: [{ chainId: BASE_CHAIN_ID }],
+          });
+        } catch (switchError) {
+          if (switchError.code === 4902) {
+            await provider.request({
+              method: 'wallet_addEthereumChain',
+              params: [BASE_CHAIN_CONFIG],
+            });
+          }
+        }
+      }
+
+      setAccount(accounts[0]);
+      setShowWalletMenu(false);
+    } catch (error) {
+      console.error('Wallet connection error:', error);
+      alert('Failed to connect wallet');
+    }
+  };
+
+  const disconnectWallet = () => {
+    setAccount('');
+    setIsGuest(false);
+    setShowWalletMenu(false);
+  };
+
+  const playAsGuest = () => {
+    setIsGuest(true);
+    setShowWalletMenu(false);
+  };
+
+  const startGame = () => {
+    setScore(0);
+    setMissedItems(0);
+    setItems([]);
+    setGameActive(true);
+    setGameOver(false);
+    setBasketPos(50);
+
+    itemInterval.current = setInterval(() => {
+      const newItem = {
+        id: Date.now() + Math.random(),
+        x: Math.random() * 85,
+        y: 0,
+        emoji: ['🍎', '🍊', '🍌', '🍇', '🍓', '🥝', '🍒', '🍑'][Math.floor(Math.random() * 8)]
+      };
+      setItems(prev => [...prev, newItem]);
+    }, 1200);
+
+    gameInterval.current = setInterval(() => {
+      setItems(prev => {
+        const updated = prev.map(item => ({ ...item, y: item.y + 2.5 }));
+        const missed = updated.filter(item => item.y >= 100);
+        if (missed.length > 0) {
+          setMissedItems(m => m + missed.length);
+        }
+        return updated.filter(item => item.y < 100);
+      });
+    }, 50);
+  };
+
+  const stopGame = async () => {
+    clearInterval(gameInterval.current);
+    clearInterval(itemInterval.current);
+    setGameActive(false);
+    setGameOver(true);
+
+    if (account && score > 0) {
+      try {
+        const shortAddr = `${account.slice(0, 6)}...${account.slice(-4)}`;
+        const scoreData = {
+          address: shortAddr,
+          score: score,
+          timestamp: Date.now()
+        };
+        await window.storage.set(`score:${account}-${Date.now()}`, JSON.stringify(scoreData), true);
+        await loadLeaderboard();
+      } catch (error) {
+        console.error('Error saving score:', error);
+      }
+    }
+
+    if (isGuest && score > 0) {
+      setTimeout(() => {
+        alert(`Great game! Your score: ${score}\n\nConnect your wallet to save scores to the leaderboard!`);
+      }, 500);
+    }
+  };
+
+  useEffect(() => {
+    if (missedItems >= 10 && gameActive) {
+      stopGame();
+    }
+  }, [missedItems, gameActive]);
+
+  useEffect(() => {
+    const handleKeyPress = (e) => {
+      if (!gameActive) return;
+      if (e.key === 'ArrowLeft') {
+        setBasketPos(prev => Math.max(0, prev - 6));
+      } else if (e.key === 'ArrowRight') {
+        setBasketPos(prev => Math.min(85, prev + 6));
+      }
+    };
+    window.addEventListener('keydown', handleKeyPress);
+    return () => window.removeEventListener('keydown', handleKeyPress);
+  }, [gameActive]);
+
+  const handleTouchMove = (e) => {
+    if (!gameActive) return;
+    const touchX = e.touches[0].clientX;
+    const gameArea = e.currentTarget;
+    const rect = gameArea.getBoundingClientRect();
+    const percentage = ((touchX - rect.left) / rect.width) * 100;
+    setBasketPos(Math.max(0, Math.min(85, percentage - 5)));
+  };
+
+  useEffect(() => {
+    if (!gameActive) return;
+
+    items.forEach(item => {
+      if (item.y > 82 && item.y < 95) {
+        const distance = Math.abs(item.x - basketPos);
+        if (distance < 10) {
+          setScore(prev => prev + 10);
+          setItems(prev => prev.filter(i => i.id !== item.id));
+        }
+      }
+    });
+  }, [items, basketPos, gameActive]);
+
+  const bgClass = darkMode 
+    ? 'bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900' 
+    : 'bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50';
+  
+  const cardClass = darkMode 
+    ? 'bg-white/10 backdrop-blur-md border border-white/20' 
+    : 'bg-white/80 backdrop-blur-md border border-gray-200 shadow-xl';
+  
+  const textClass = darkMode ? 'text-white' : 'text-gray-900';
+  const textSecondary = darkMode ? 'text-purple-300' : 'text-purple-600';
+  const gameAreaBg = darkMode 
+    ? 'bg-gradient-to-b from-indigo-900 via-purple-900 to-slate-900' 
+    : 'bg-gradient-to-b from-sky-300 via-blue-200 to-green-100';
+
+  return (
+    <div className={`min-h-screen ${bgClass} ${textClass} p-4 transition-colors duration-300`}>
+      <div className="max-w-5xl mx-auto">
+        {/* Header */}
+        <div className="flex justify-between items-center mb-4 md:mb-6">
+          <div>
+            <h1 className="text-2xl md:text-4xl font-bold flex items-center gap-2">
+              <span className="text-3xl md:text-5xl">🎮</span>
+              Catch Items
+            </h1>
+            <p className={`${textSecondary} text-xs md:text-sm mt-1`}>
+              Web3 Game on Base Network
+            </p>
+          </div>
+
+          <div className="flex items-center gap-2 md:gap-3">
+            {/* Theme Toggle */}
+            <button
+              onClick={() => setDarkMode(!darkMode)}
+              className={`p-2 md:p-3 rounded-lg transition-all ${
+                darkMode 
+                  ? 'bg-yellow-500/20 hover:bg-yellow-500/30 text-yellow-300' 
+                  : 'bg-indigo-500/20 hover:bg-indigo-500/30 text-indigo-600'
+              }`}
+              aria-label="Toggle theme"
+            >
+              {darkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+            </button>
+
+            {/* Wallet Button */}
+            <div className="relative">
+              {!account && !isGuest ? (
+                <>
+                  <button
+                    onClick={() => setShowWalletMenu(!showWalletMenu)}
+                    className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 px-3 md:px-6 py-2 md:py-3 rounded-lg font-bold flex items-center gap-2 transition-all shadow-lg hover:shadow-xl text-sm md:text-base"
+                  >
+                    <Wallet className="w-4 md:w-5 h-4 md:h-5" />
+                    <span className="hidden sm:inline">Connect</span>
+                    <ChevronDown className="w-3 md:w-4 h-3 md:h-4" />
+                  </button>
+
+                  {showWalletMenu && (
+                    <>
+                      <div className="fixed inset-0 z-40" onClick={() => setShowWalletMenu(false)} />
+                      <div className={`absolute right-0 mt-2 ${darkMode ? 'bg-gray-900' : 'bg-white'} rounded-xl shadow-2xl overflow-hidden z-50 min-w-[220px] border ${darkMode ? 'border-gray-700' : 'border-gray-200'}`}>
+                        <button
+                          onClick={() => connectWallet('metamask')}
+                          className={`w-full px-6 py-4 text-left flex items-center gap-3 transition-colors ${darkMode ? 'hover:bg-gray-800' : 'hover:bg-gray-50'}`}
+                        >
+                          <span className="text-2xl">🦊</span>
+                          <span className="font-medium">MetaMask</span>
+                        </button>
+                        <button
+                          onClick={() => connectWallet('okx')}
+                          className={`w-full px-6 py-4 text-left flex items-center gap-3 transition-colors border-t ${darkMode ? 'border-gray-800 hover:bg-gray-800' : 'border-gray-100 hover:bg-gray-50'}`}
+                        >
+                          <span className="text-2xl">⚫</span>
+                          <span className="font-medium">OKX Wallet</span>
+                        </button>
+                        <button
+                          onClick={playAsGuest}
+                          className={`w-full px-6 py-4 text-left flex items-center gap-3 transition-colors border-t ${darkMode ? 'border-gray-800 hover:bg-gray-800' : 'border-gray-100 hover:bg-gray-50'}`}
+                        >
+                          <span className="text-2xl">👤</span>
+                          <span className="font-medium">Play as Guest</span>
+                        </button>
+                      </div>
+                    </>
+                  )}
+                </>
+              ) : isGuest ? (
+                <>
+                  <button
+                    onClick={() => setShowWalletMenu(!showWalletMenu)}
+                    className={`px-3 md:px-6 py-2 md:py-3 rounded-lg font-bold flex items-center gap-2 transition-all shadow-lg text-sm md:text-base ${
+                      darkMode ? 'bg-gray-700 hover:bg-gray-600' : 'bg-gray-300 hover:bg-gray-400'
+                    }`}
+                  >
+                    <span>👤</span>
+                    <span className="hidden sm:inline">Guest</span>
+                    <ChevronDown className="w-3 md:w-4 h-3 md:h-4" />
+                  </button>
+
+                  {showWalletMenu && (
+                    <>
+                      <div className="fixed inset-0 z-40" onClick={() => setShowWalletMenu(false)} />
+                      <div className={`absolute right-0 mt-2 ${darkMode ? 'bg-gray-900' : 'bg-white'} rounded-xl shadow-2xl overflow-hidden z-50 min-w-[200px] border ${darkMode ? 'border-gray-700' : 'border-gray-200'}`}>
+                        <button
+                          onClick={disconnectWallet}
+                          className={`w-full px-6 py-4 text-left transition-colors ${darkMode ? 'text-red-400 hover:bg-gray-800' : 'text-red-600 hover:bg-gray-50'}`}
+                        >
+                          Exit Guest Mode
+                        </button>
+                      </div>
+                    </>
+                  )}
+                </>
+              ) : (
+                <>
+                  <button
+                    onClick={() => setShowWalletMenu(!showWalletMenu)}
+                    className="bg-green-600 hover:bg-green-700 px-3 md:px-6 py-2 md:py-3 rounded-lg font-bold flex items-center gap-2 transition-all shadow-lg text-sm md:text-base"
+                  >
+                    <div className="w-2 h-2 bg-green-300 rounded-full animate-pulse" />
+                    <span className="font-mono">{account.slice(0, 4)}...{account.slice(-4)}</span>
+                    <ChevronDown className="w-3 md:w-4 h-3 md:h-4" />
+                  </button>
+
+                  {showWalletMenu && (
+                    <>
+                      <div className="fixed inset-0 z-40" onClick={() => setShowWalletMenu(false)} />
+                      <div className={`absolute right-0 mt-2 ${darkMode ? 'bg-gray-900' : 'bg-white'} rounded-xl shadow-2xl overflow-hidden z-50 min-w-[200px] border ${darkMode ? 'border-gray-700' : 'border-gray-200'}`}>
+                        <button
+                          onClick={disconnectWallet}
+                          className={`w-full px-6 py-4 text-left transition-colors ${darkMode ? 'text-red-400 hover:bg-gray-800' : 'text-red-600 hover:bg-gray-50'}`}
+                        >
+                          Disconnect
+                        </button>
+                      </div>
+                    </>
+                  )}
+                </>
+              )}
+            </div>
+          </div>
+        </div>
+
+        {/* Main Content */}
+        {account || isGuest ? (
+          <>
+            {/* Score Bar */}
+            <div className={`${cardClass} rounded-xl p-4 mb-4 flex justify-between items-center transition-all`}>
+              <div className="flex gap-4 md:gap-6 items-center">
+                <div className="text-xl md:text-2xl font-bold">
+                  💎 {score}
+                </div>
+                <div className={`text-base md:text-lg font-semibold ${missedItems >= 7 ? 'text-red-500 animate-pulse' : 'text-orange-400'}`}>
+                  ❌ {missedItems}/10
+                </div>
+              </div>
+              <div className="flex gap-2 md:gap-3">
+                {isGuest && !gameActive && (
+                  <button
+                    onClick={() => setShowWalletMenu(true)}
+                    className="bg-purple-500 hover:bg-purple-600 px-3 md:px-4 py-2 rounded-lg flex items-center gap-2 transition-all shadow-md text-xs md:text-sm font-medium"
+                  >
+                    <Wallet className="w-4 h-4" />
+                    <span className="hidden sm:inline">Save Score</span>
+                  </button>
+                )}
+                <button
+                  onClick={() => setShowLeaderboard(true)}
+                  className="bg-yellow-500 hover:bg-yellow-600 px-3 md:px-4 py-2 rounded-lg flex items-center gap-2 transition-all shadow-md text-sm md:text-base font-medium"
+                >
+                  <Trophy className="w-4 md:w-5 h-4 md:h-5" />
+                  <span className="hidden md:inline">Top 10</span>
+                </button>
+              </div>
+            </div>
+
+            {/* Game Area */}
+            <div className={`${cardClass} rounded-2xl p-4 md:p-8 mb-4 transition-all`}>
+              {!gameActive && !gameOver && (
+                <div className="text-center py-8">
+                  <div className="text-6xl md:text-8xl mb-6 animate-bounce">🧺</div>
+                  <h2 className="text-2xl md:text-3xl font-bold mb-6">Ready to Play?</h2>
+                  <div className={`${darkMode ? 'bg-white/5' : 'bg-gray-50'} rounded-xl p-6 mb-6 max-w-md mx-auto`}>
+                    <p className="mb-3 text-sm md:text-base">🖥️ <strong>Desktop:</strong> Use ← → arrow keys</p>
+                    <p className="mb-3 text-sm md:text-base">📱 <strong>Mobile:</strong> Touch and drag</p>
+                    <p className="mb-3 text-sm md:text-base">🎯 <strong>Goal:</strong> Catch items = +10 points</p>
+                    <p className="text-red-400 font-bold text-sm md:text-base">⚠️ Miss 10 items = Game Over!</p>
+                  </div>
+                  <button
+                    onClick={startGame}
+                    className="bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 px-8 md:px-12 py-4 md:py-5 rounded-xl font-bold text-lg md:text-xl transition-all shadow-xl hover:shadow-2xl flex items-center gap-3 mx-auto"
+                  >
+                    <Play className="w-6 h-6" />
+                    Start Game
+                  </button>
+                </div>
+              )}
+
+              {gameOver && (
+                <div className="text-center py-8">
+                  <div className="text-6xl md:text-8xl mb-6">
+                    {score >= 200 ? '🏆' : score >= 100 ? '🎉' : '💪'}
+                  </div>
+                  <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                    {score >= 200 ? 'Amazing!' : score >= 100 ? 'Great Job!' : 'Good Try!'}
+                  </h2>
+                  <div className={`${darkMode ? 'bg-white/5' : 'bg-gray-50'} rounded-xl p-6 mb-6 max-w-md mx-auto`}>
+                    <p className="text-3xl md:text-4xl font-bold mb-2">💎 {score}</p>
+                    <p className={`text-lg ${textSecondary}`}>Final Score</p>
+                    <p className="mt-3 text-orange-400">Missed: {missedItems} items</p>
+                  </div>
+                  <button
+                    onClick={startGame}
+                    className="bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 px-8 md:px-12 py-4 md:py-5 rounded-xl font-bold text-lg md:text-xl transition-all shadow-xl hover:shadow-2xl flex items-center gap-3 mx-auto"
+                  >
+                    <RotateCcw className="w-6 h-6" />
+                    Play Again
+                  </button>
+                </div>
+              )}
+
+              {gameActive && (
+                <div
+                  className={`relative ${gameAreaBg} rounded-xl overflow-hidden shadow-inner transition-colors duration-300`}
+                  style={{ height: '500px' }}
+                  onTouchMove={handleTouchMove}
+                >
+                  {items.map(item => (
+                    <div
+                      key={item.id}
+                      className="absolute text-3xl md:text-4xl transition-all duration-50 drop-shadow-lg"
+                      style={{ left: `${item.x}%`, top: `${item.y}%` }}
+                    >
+                      {item.emoji}
+                    </div>
+                  ))}
+                  <div
+                    className="absolute bottom-0 text-5xl md:text-6xl transition-all duration-100 drop-shadow-xl"
+                    style={{ left: `${basketPos}%` }}
+                  >
+                    🧺
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {gameActive && (
+              <div className="text-center">
+                <button
+                  onClick={stopGame}
+                  className="bg-red-500 hover:bg-red-600 px-6 md:px-8 py-3 md:py-4 rounded-xl font-bold transition-all shadow-lg text-base md:text-lg"
+                >
+                  End Game
+                </button>
+              </div>
+            )}
+          </>
+        ) : (
+          <div className={`${cardClass} rounded-2xl p-8 md:p-12 text-center transition-all`}>
+            <div className="text-6xl md:text-8xl mb-6">🎮</div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Welcome to Catch Items!</h2>
+            <p className={`text-lg md:text-xl ${textSecondary} mb-8 max-w-2xl mx-auto`}>
+              Connect your wallet to compete on the leaderboard or play as a guest to try the game
+            </p>
+            <div className={`text-left max-w-md mx-auto space-y-3 ${textSecondary} mb-8`}>
+              <p className="flex items-center gap-2">✓ Connect with MetaMask or OKX Wallet</p>
+              <p className="flex items-center gap-2">✓ Play on Base Network</p>
+              <p className="flex items-center gap-2">✓ Compete for the highest score</p>
+              <p className="flex items-center gap-2">✓ Global leaderboard ranking</p>
+            </div>
+          </div>
+        )}
+
+        {/* Leaderboard Modal */}
+        {showLeaderboard && (
+          <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 z-50 animate-in fade-in duration-200">
+            <div className={`${darkMode ? 'bg-gradient-to-br from-gray-900 to-purple-900' : 'bg-gradient-to-br from-white to-purple-50'} rounded-2xl p-6 md:p-8 max-w-md w-full shadow-2xl border ${darkMode ? 'border-purple-500/30' : 'border-purple-200'}`}>
+              <div className="flex justify-between items-center mb-6">
+                <h2 className="text-2xl md:text-3xl font-bold flex items-center gap-3">
+                  <Trophy className="w-7 h-7 md:w-8 md:h-8 text-yellow-400" />
+                  Leaderboard
+                </h2>
+                <button
+                  onClick={() => setShowLeaderboard(false)}
+                  className={`p-2 rounded-lg transition-colors ${darkMode ? 'hover:bg-white/10' : 'hover:bg-gray-200'}`}
+                >
+                  <X className="w-6 h-6" />
+                </button>
+              </div>
+              <div className="space-y-2 max-h-[400px] overflow-y-auto">
+                {loading ? (
+                  <p className={`text-center py-8 ${textSecondary}`}>Loading...</p>
+                ) : leaderboard.length === 0 ? (
+                  <p className={`text-center py-8 ${textSecondary}`}>No scores yet. Be the first! 🏆</p>
+                ) : (
+                  leaderboard.map((entry, idx) => (
+                    <div
+                      key={idx}
+                      className={`${darkMode ? 'bg-white/10 hover:bg-white/15' : 'bg-white hover:bg-gray-50'} rounded-xl p-4 flex justify-between items-center transition-all border ${darkMode ? 'border-white/10' : 'border-gray-200'}`}
+                    >
+                      <div className="flex items-center gap-4">
+                        <span className={`text-2xl md:text-3xl font-bold ${
+                          idx === 0 ? 'text-yellow-400' : idx === 1 ? 'text-gray-300' : idx === 2 ? 'text-orange-400' : textSecondary
+                        }`}>
+                          {idx === 0 ? '🥇' : idx === 1 ? '🥈' : idx === 2 ? '🥉' : `#${idx + 1}`}
+                        </span>
+                        <span className="font-mono text-sm md:text-base">{entry.address}</span>
+                      </div>
+                      <span className="text-xl md:text-2xl font-bold">💎 {entry.score}</span>
+                    </div>
+                  ))
+                )}
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+```
+
+---
+
+## 🚀 Installation Instructions
+
+### Method 1: Manual Setup (Recommended)
+
+1. **Create project folder:**
+```bash
+mkdir catch-items-web3
+cd catch-items-web3
+```
+
+2. **Copy all files above** into their respective locations following the folder structure
+
+3. **Install dependencies:**
+```bash
+npm install
+```
+
+4. **Run the project:**
+```bash
+npm run dev
+```
+
+5. **Open browser:**
+Visit `http://localhost:3000`
+
+---
+
+### Method 2: Quick Setup Script
+
+**For Windows (setup.bat):**
+```batch
+@echo off
+echo Creating Catch Items Web3 Game...
+
+mkdir catch-items-web3
+cd catch-items-web3
+
+echo Initializing npm...
+call npm init -y
+
+echo Installing dependencies...
+call npm install react react-dom lucide-react
+call npm install --save-dev vite @vitejs/plugin-react tailwindcss postcss autoprefixer
+
+echo Initializing Tailwind CSS...
+call npx tailwindcss init -p
+
+echo Creating project structure...
+mkdir src public
+
+echo Project setup complete!
+echo.
+echo Next steps:
+echo 1. Copy all file contents from the artifact above
+echo 2. Run: npm run dev
+echo 3. Open: http://localhost:3000
+
+pause
+```
+
+**For Mac/Linux (setup.sh):**
+```bash
+#!/bin/bash
+
+echo "Creating Catch Items Web3 Game..."
+
+mkdir catch-items-web3
+cd catch-items-web3
+
+echo "Initializing npm..."
+npm init -y
+
+echo "Installing dependencies..."
+npm install react react-dom lucide-react
+npm install --save-dev vite @vitejs/plugin-react tailwindcss postcss autoprefixer
+
+echo "Initializing Tailwind CSS..."
+npx tailwindcss init -p
+
+echo "Creating project structure..."
+mkdir -p src public
+
+echo "Project setup complete!"
+echo ""
+echo "Next steps:"
+echo "1. Copy all file contents from the artifact above"
+echo "2. Run: npm run dev"
+echo "3. Open: http://localhost:3000"
+```
+
+---
+
+## 📝 Quick Checklist
+
+After copying all files, verify:
+
+- [ ] `package.json` exists with correct scripts
+- [ ] `vite.config.js` configured
+- [ ] `tailwind.config.js` and `postcss.config.js` exist
+- [ ] `public/index.html` exists
+- [ ] `src/main.jsx` exists
+- [ ] `src/App.jsx` exists (complete game code)
+- [ ] `src/index.css` exists with Tailwind imports
+- [ ] `.gitignore` created
+- [ ] `README.md` created
+
+Then run:
+```bash
+npm install
+npm run dev
+```
+
+---
+
+## 🎯 Features Included
+
+✅ Dark/Light mode toggle
+✅ MetaMask & OKX wallet integration
+✅ Base Network support
+✅ Guest mode (play without wallet)
+✅ Global leaderboard with persistent storage
+✅ Mobile responsive (touch controls)
+✅ Smooth animations
+✅ Professional UI/UX
+✅ Game over on 10 missed items
+✅ Score tracking
+
+---
+
+## 📦 Production Build
+
+```bash
+npm run build
+```
+
+Deploy the `dist/` folder to any static hosting service:
+- Vercel
+- Netlify
+- GitHub Pages
+- AWS S3
+- Cloudflare Pages
+
+---
+
+## 🆘 Need Help?
+
+If you encounter any issues:
+1. Make sure Node.js is installed: `node --version`
+2. Delete `node_modules` and run `npm install` again
+3. Clear browser cache
+4. Check console for errors
+
+---
+
+**All files are ready! Copy them to your project and enjoy! 🎮**
