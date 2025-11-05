@@ -1,0 +1,32 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "baseBuilder": {
+    "ownerAddress": "0x"
+  },
+  "miniapp": {
+    "version": "1",
+    "name": "Catch Items Game",
+    "homeUrl": "https://your-app-url.repl.co",
+    "iconUrl": "https://your-app-url.repl.co/favicon.png",
+    "splashImageUrl": "https://your-app-url.repl.co/favicon.png",
+    "splashBackgroundColor": "#000000",
+    "webhookUrl": "https://your-app-url.repl.co/api/webhook",
+    "subtitle": "A fun Web3 catching game",
+    "description": "Catch falling items in this fast-paced Web3 game on the Base Network.",
+    "screenshotUrls": [
+      "https://your-app-url.repl.co/screenshot1.png"
+    ],
+    "primaryCategory": "gaming",
+    "tags": ["game", "web3", "base", "miniapp"],
+    "heroImageUrl": "https://your-app-url.repl.co/hero.png",
+    "tagline": "Catch and win!",
+    "ogTitle": "Catch Items - Web3 Game",
+    "ogDescription": "Play the Catch Items game on Base Network",
+    "ogImageUrl": "https://your-app-url.repl.co/og-image.png",
+    "noindex": false
+  }
+}

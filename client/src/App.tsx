@@ -4,6 +4,8 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import CatchingGame from "@/pages/game";
+import { sdk } from '@farcaster/miniapp-sdk';
+import { useEffect } from 'react';
 
 function Router() {
   return (
@@ -15,6 +17,10 @@ function Router() {
 }
 
 function App() {
+  useEffect(() => {
+    sdk.actions.ready();
+  }, []);
+
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
