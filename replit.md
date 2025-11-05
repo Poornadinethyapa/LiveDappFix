@@ -63,13 +63,16 @@ Preferred communication style: Simple, everyday language.
 
 **Farcaster Mini App:**
 - Integration with @farcaster/miniapp-sdk (installed November 2025)
-- SDK initialization via `sdk.actions.ready()` in App.tsx to hide loading splash
+- SDK initialization via `sdk.actions.ready()` in App.tsx with async/await and error handling (Updated Nov 5, 2025)
+- Properly dismisses Farcaster splash screen on app load
 - Buffer polyfill added to main.tsx for browser compatibility
-- Mini app manifest at `client/public/.well-known/farcaster.json` following Farcaster documentation
-- fc:miniapp metadata in index.html for rich embeds
+- Express route serving manifest at `/.well-known/farcaster.json` (Added Nov 5, 2025)
+- Production URL configured: https://basexfruits.vercel.app
+- fc:miniapp metadata in index.html updated with production URLs for rich embeds
 - Required chain: Base Network (eip155:8453)
 - Manifest includes app metadata: name, description, icons, screenshots, and categorization
 - Account association fields ready for ownership verification via Farcaster Developer Tools
+- Comprehensive deployment guide available in FARCASTER_DEPLOYMENT_GUIDE.md
 
 ### External Dependencies
 
