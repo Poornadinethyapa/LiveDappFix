@@ -66,9 +66,46 @@ Before deploying to Vercel/production:
 
 - [ ] Sign the manifest and update `server/routes.ts` with signature values
 - [ ] Ensure all URLs in the manifest point to `https://basexfruits.vercel.app`
-- [ ] Deploy to Vercel
+- [ ] Make sure `vercel.json` is properly configured (already done ✅)
+- [ ] Deploy to Vercel (see deployment instructions below)
 - [ ] Verify manifest is accessible: `https://basexfruits.vercel.app/.well-known/farcaster.json`
 - [ ] Test the manifest using Warpcast Embed Tool
+
+## 🚀 Vercel Deployment Instructions
+
+### Using Vercel CLI (Recommended)
+
+1. **Install Vercel CLI**
+   ```bash
+   npm i -g vercel
+   ```
+
+2. **Login to Vercel**
+   ```bash
+   vercel login
+   ```
+
+3. **Deploy**
+   ```bash
+   vercel --prod
+   ```
+
+### Using Vercel Dashboard
+
+1. Go to https://vercel.com/new
+2. Import your Git repository
+3. Vercel will auto-detect the configuration from `vercel.json`
+4. Click "Deploy"
+
+### Important Deployment Notes
+
+- The `vercel.json` is already configured to:
+  - Run `npm run build` which builds both frontend and backend
+  - Route all requests through the Express server at `dist/index.js`
+  - Serve static files from `dist/public`
+
+- Make sure your Vercel project is connected to the correct Git repository
+- After deployment, verify the app loads at https://basexfruits.vercel.app
 
 ## 🔍 Verify Your Deployment
 
