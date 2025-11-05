@@ -62,10 +62,14 @@ Preferred communication style: Simple, everyday language.
 - Network switching capabilities to Base mainnet
 
 **Farcaster Mini App:**
-- Integration with @farcaster/miniapp-sdk
-- Mini app manifest in `.well-known/farcaster.json`
-- Ready state signaling to hide loading splash
-- Designed for Base Build preview and Base app distribution
+- Integration with @farcaster/miniapp-sdk (installed November 2025)
+- SDK initialization via `sdk.actions.ready()` in App.tsx to hide loading splash
+- Buffer polyfill added to main.tsx for browser compatibility
+- Mini app manifest at `client/public/.well-known/farcaster.json` following Farcaster documentation
+- fc:miniapp metadata in index.html for rich embeds
+- Required chain: Base Network (eip155:8453)
+- Manifest includes app metadata: name, description, icons, screenshots, and categorization
+- Account association fields ready for ownership verification via Farcaster Developer Tools
 
 ### External Dependencies
 
