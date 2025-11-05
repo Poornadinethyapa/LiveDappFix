@@ -1,16 +1,17 @@
 {
-  "version": 2,
-  "builds": [
+  "buildCommand": "npm run build",
+  "rewrites": [
     {
-      "src": "dist/index.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
+      "source": "/api/(.*)",
+      "destination": "/api"
+    },
     {
-      "src": "/(.*)",
-      "dest": "/dist/index.js"
+      "source": "/.well-known/farcaster.json",
+      "destination": "/api"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
-  ],
-  "buildCommand": "npm run build"
+  ]
 }
