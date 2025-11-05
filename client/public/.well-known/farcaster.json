@@ -7,9 +7,9 @@
   "miniapp": {
     "version": "1",
     "name": "Catch Items",
-    "homeUrl": "https://workspace-dinethhh1.replit.app",
-    "iconUrl": "https://workspace-dinethhh1.replit.app/favicon.png",
-    "splashImageUrl": "https://workspace-dinethhh1.replit.app/favicon.png",
+    "homeUrl": "https://basexfruits.vercel.app",
+    "iconUrl": "https://basexfruits.vercel.app/favicon.png",
+    "splashImageUrl": "https://basexfruits.vercel.app/favicon.png",
     "splashBackgroundColor": "#1a0b2e",
     "subtitle": "Fast, fun catching game",
     "description": "Catch falling items in this fast-paced Web3 game on the Base Network. Connect your wallet to compete on the leaderboard or play as a guest to try the game.",

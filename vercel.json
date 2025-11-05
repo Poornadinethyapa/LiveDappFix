@@ -3,10 +3,14 @@
   "outputDirectory": "dist/public",
   "installCommand": "npm install",
   "framework": null,
-  "rewrites": [
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "src": "/.well-known/farcaster.json",
+      "dest": "/.well-known/farcaster.json"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
