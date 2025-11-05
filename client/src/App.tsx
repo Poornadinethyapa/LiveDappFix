@@ -18,7 +18,16 @@ function Router() {
 
 function App() {
   useEffect(() => {
-    sdk.actions.ready();
+    const initializeFarcasterSDK = async () => {
+      try {
+        await sdk.actions.ready();
+        console.log('Farcaster SDK initialized successfully');
+      } catch (error) {
+        console.error('Failed to initialize Farcaster SDK:', error);
+      }
+    };
+
+    initializeFarcasterSDK();
   }, []);
 
   return (
